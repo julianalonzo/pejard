@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	background-color: #f4f4f4;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+
+/* Header */
+header {
+	height: 220px;
+}
+
+header a {
+	float: left;
+	margin-right: 20px;
+}
+
+#header-wrapper {
+	text-align: center;
+	padding-top: 90px;
+	float: left;
+}
+
+#header-wrapper-sub {
+	margin-top: 10px;
+	border-top: 2px solid #000000;
+}
+
+#header-wrapper-sub > * {
+	display: inline;
+	padding: 0 40px;
+}
+
+#header-wrapper #header-wrapper-sub p {
+	background-color: red;
+}
+
+#header-wrapper #header-wrapper-sub img {
+	width: 150px;
+	background-color: red;
+}
