@@ -5,11 +5,12 @@
 }
 
 body {
-	background-color: #f4f4f4;
+	background: linear-gradient(to bottom, blue, lightblue, white);
+	color: #ffffff;
 }
 
 .container {
-	width: 60%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -31,19 +32,16 @@ header a {
 
 #header-wrapper-sub {
 	margin-top: 10px;
-	border-top: 2px solid #000000;
+	border-top: 2px solid #ffffff;
+	padding-top: 5px;
 }
 
 #header-wrapper-sub > * {
-	display: inline;
 	padding: 0 40px;
-}
-
-#header-wrapper #header-wrapper-sub p {
-	background-color: red;
+	display: inline;
+	vertical-align: middle;
 }
 
 #header-wrapper #header-wrapper-sub img {
-	width: 150px;
-	background-color: red;
+	width: 100px;
 }
