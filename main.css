@@ -9,7 +9,7 @@ body {
 	color: #ffffff;
 }
 
-.container {
+.my-container {
 	width: 55%;
 	margin: auto;
 	overflow: hidden;
@@ -64,7 +64,7 @@ header a img {
 }
 
 /* Navigation */
-nav .container {
+nav .my-container {
 	width: 50%;
 	background-color: #072560;
 	padding: 20px 25px;
@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 /* Main */
-main .container {
+main .my-container {
 	background-color: rgba(255, 255, 255, 0.2);
 	width: 50%;
 	padding: 20px 25px;
@@ -149,7 +149,7 @@ footer {
 	font-family: Arial, sans-serif;
 }
 
-footer .container {
+footer .my-container {
 	width: 50%;
 	background-color: #072560;
 	padding: 20px 25px;
