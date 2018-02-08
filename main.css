@@ -5,7 +5,7 @@
 }
 
 body {
-	background: linear-gradient(to bottom, rgba(17, 96, 235, 1), rgba(97, 160, 241, 1), rgba(17, 96, 235, 0.2));
+	background: linear-gradient(to bottom, rgba(17, 96, 235, 1), rgba(17, 96, 235, 0.2));
 	color: #ffffff;
 }
 
@@ -22,7 +22,8 @@ body {
 /* Header */
 header {
 	height: 180px;
-	vertical-align: middle;
+	margin: 0 auto;
+	vertical-align: vertical;
 }
 
 header a {
