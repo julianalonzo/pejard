@@ -5,45 +5,160 @@
 }
 
 body {
-	background-color: #f4f4f4;
+	background: linear-gradient(to bottom, rgba(17, 96, 235, 1), rgba(97, 160, 241, 1), rgba(17, 96, 235, 0.2));
+	color: #ffffff;
 }
 
 .container {
-	width: 60%;
+	width: 55%;
 	margin: auto;
+	overflow: hidden;
+}
+
+.current a {
+	color: gold;
 }
 
 /* Header */
 header {
-	height: 220px;
+	height: 180px;
+	vertical-align: middle;
 }
 
 header a {
+	text-align: center;
+	margin-right: 15px;
 	float: left;
-	margin-right: 20px;
+}
+
+header a img {
+	width: 190px;
 }
 
 #header-wrapper {
 	text-align: center;
-	padding-top: 90px;
+	margin-top: 77px;
 	float: left;
 }
 
+#header-wrapper h1 {
+	margin-bottom: 5px;
+}
+
 #header-wrapper-sub {
-	margin-top: 10px;
-	border-top: 2px solid #000000;
+	padding-top: 5px;
+	border-top: 2px solid #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 110%;
 }
 
 #header-wrapper-sub > * {
 	display: inline;
-	padding: 0 40px;
-}
-
-#header-wrapper #header-wrapper-sub p {
-	background-color: red;
+	vertical-align: middle;
+	padding: 0 60px;
 }
 
 #header-wrapper #header-wrapper-sub img {
-	width: 150px;
-	background-color: red;
+	width: 110px;
+}
+
+/* Navigation */
+nav .container {
+	width: 50%;
+	background-color: #072560;
+	padding: 20px 25px;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0px 10px;
+}
+
+nav a {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+	color: gold;
+}
+
+/* Main */
+main .container {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 50%;
+	padding: 20px 25px;
+	color: #000000;
+}
+
+main p {
+	line-height: 150%;
+}
+
+/* Sections */
+section {
+	width: 95%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	margin-bottom: 30px;
+}
+
+section h2 {
+	padding: 10px 20px;
+	background-color: #072560;
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 120%;
+}
+
+section a {
+	text-decoration: none;
+}
+
+section a:hover {
+	text-decoration: underline;
+}
+
+section p {
+	text-align: justify;
+	padding: 10px 20px;
+	text-indent: 40px;
+	font-family: Arial, sans-serif;
+	font-size: 95%;
+}
+
+section ul {
+	font-family: Arial, sans-serif;
+	margin-left: 35px;
+	padding: 10px 20px;
+	font-size: 95%;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+footer .container {
+	width: 50%;
+	background-color: #072560;
+	padding: 20px 25px;
+	color: #ffffff;
+}
+
+footer nav {
+	margin-bottom: 20px;
+}
+
+footer p {
+	display: inline;
 }
