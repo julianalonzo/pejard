@@ -6,7 +6,7 @@ body {
 }
 
 .bg-primary-accent {
-    background-color: rgb(10, 65, 158); 
+    background-color: rgb(10, 65, 158);
 }
 
 h1 {
@@ -19,11 +19,27 @@ h3 {
 }
 
 a {
-	color: #2138EF;
+	color: rgb(9, 33, 234);
 }
 
 a:hover {
-	color: #2138EF;
+	color: rgb(9, 33, 234);
+}
+
+ul {
+    padding-right: 30px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgb(10, 65, 158);
+    color: #ffffff;
+    text-align: center;
+}
+
+.button:hover {
+    color: #ffffff;
 }
 
 /* Header */
@@ -36,9 +52,6 @@ a:hover {
 }
 
 /* Navigation */
-.navbar-dark .navbar-toggler-icon {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
-}
 .nav-item {
     padding-right: 2px;
 }
@@ -47,11 +60,16 @@ ul.navbar-nav > li {
     text-transform: uppercase;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: orange;
-}
 .navbar-dark .navbar-nav .nav-link {
     color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(231, 142, 35);
+}
+
+#menu li.current a {
+    color: rgb(231, 142, 35);
 }
 
 /* Body */
@@ -87,14 +105,21 @@ section p {
     text-align: justify;
 }
 
-section .article {
-    text-indent: 0;
-    padding: 5px 50px;
-    font-style: italic;
-    line-height: 1.10;
+section ul.articles-list {
+    list-style: none;
+    padding-right: 40px;
 }
 
-section .article a, .guideline-heading {
+section ul.articles-list li {
+    margin-bottom: 20px;
+}
+
+#download-button {
+    float: right;
+    margin: 20px 20px 20px 0;
+}
+
+section .guideline-heading {
     display: inline-block;
     width: 100%;
     font-style: normal;
@@ -112,19 +137,16 @@ section.guidelines p {
 	padding-left: 60px;
 }
 
-/* Archive Button */
 .section-divider {
 	background-color: transparent;
 	text-align: center;
 }
 
-.archive-button {
-	display: inline-block;	
+#archive-button {
 	padding: 10px 70px;
-	background-color: rgb(10, 65, 158);
 	border: 3px solid #ffffff;
 	font-size: 130%;
-	color: #FFA534;
+	color: rgb(231, 142, 35);
 }
 
 /* Footer */
@@ -139,8 +161,52 @@ footer p {
     margin: 0 auto;
 }
 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    #brand {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 130%;
+    }
+
+    header h3 {
+        font-size: 100%;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    section p {
+        text-indent: 0;
+    }
+}
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
+    main {
+        padding: 5px 10px;
+    }
+
+    #download-button {
+        float: none;
+        margin-right: 0;
+    }
+
+    .wrapper {
+        text-align: center;
+    }
+
+    .guideline-list {
+    	padding: 0 40px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
     main {
         padding: 5px 10px;
     }

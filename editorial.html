@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
         <link rel="stylesheet" href="main.css">
 
         <title>Articles - Philippine e-Journal for Applied Research and Development</title>
@@ -17,7 +17,7 @@
         <div class="container">
             <header class="row align-items-center no-gutters justify-content-center">
                 <div class="col-lg-2 text-center">
-                    <a href="#"><img id="brand" src="img/pejard.png" alt="logo"></a>
+                    <a href="index.html"><img id="brand" src="img/pejard.png" alt="logo"></a>
                 </div>
 
                 <div class="col-lg-10">
@@ -41,18 +41,18 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" id="menu">
                         <li class="nav-item">
-                            <a class="nav-link current" href="#">Home</a>
+                            <a class="nav-link current" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Articles</a>
+                            <a class="nav-link" href="articles.html">Articles</a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="editorial.html">Editorial Policy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Editorial Policy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Another Guidelines</a>
+                            <a class="nav-link" href="#">Author Guidelines</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Editorial Board</a>
@@ -71,57 +71,61 @@
                 <section class="guidelines">
                     <h2 class="text-center">Editorial Policy and Ethical Guidelines</h2>
 
+                    <div class="wrapper">
+                        <a href="#" class="button" id="download-button">Download PDF File</a>
+                    </div>
+
                     <p>
                         <span class="guideline-heading">Editorial independence</span>
-                        The Editorial Board has full autonomy in carrying out the review process and the selection of 
-                        materials for publication. The Publishers (including the Journal Advisory Council as a body) 
-                        shall not be involved nor shall interfere in the review and selection of manuscripts. 
+                        The Editorial Board has full autonomy in carrying out the review process and the selection of
+                        materials for publication. The Publishers (including the Journal Advisory Council as a body)
+                        shall not be involved nor shall interfere in the review and selection of manuscripts.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Copyright ownership and open access</span>
-                        The Journal publishes articles under the Creative Commons Attribution license (CC BY), giving 
-                        authors copyright ownership of their own works while allowing the public free access to the 
-                        published articles as long as the authors and the journal are properly credited. 
+                        The Journal publishes articles under the Creative Commons Attribution license (CC BY), giving
+                        authors copyright ownership of their own works while allowing the public free access to the
+                        published articles as long as the authors and the journal are properly credited.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Publication fees/Article processing charges</span>
-                        The publication is fully subsidized by the Publishers. No fees are charged to authors for the 
-                        processing and publication of their manuscripts. 
+                        The publication is fully subsidized by the Publishers. No fees are charged to authors for the
+                        processing and publication of their manuscripts.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Peer-review</span>
-                        The Journal adopts a double blind review mechanism, with no less than two reviewers taking part 
-                        in the assessment of any given manuscript. 
+                        The Journal adopts a double blind review mechanism, with no less than two reviewers taking part
+                        in the assessment of any given manuscript.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Confidentiality</span>
-                        Only the Editorial Board shall have full access to the manuscripts submitted. The manuscripts 
-                        shall be given to reviewers, who shall in turn commit to observe measures to uphold the 
+                        Only the Editorial Board shall have full access to the manuscripts submitted. The manuscripts
+                        shall be given to reviewers, who shall in turn commit to observe measures to uphold the
                         confidentiality of the privileged information contained in the manuscripts.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Impartiality</span>
-                        The Editor-in-Chief and the reviewers commit to be fair and objective in their treatment of the 
-                        manuscripts, assessing these solely on the basis of their strength as scholarly works. 
+                        The Editor-in-Chief and the reviewers commit to be fair and objective in their treatment of the
+                        manuscripts, assessing these solely on the basis of their strength as scholarly works.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Integrity of peer-review</span>
-                        Guidelines are established to ensure that the peer-review process is not compromised 
-                        (see Guidelines for Reviewers below). 
+                        Guidelines are established to ensure that the peer-review process is not compromised
+                        (see Guidelines for Reviewers below).
                     </p>
 
                     <p>
                         <span class="guideline-heading">Manuscript authorship</span>
-                        Only those who have substantive contribution in the research and manuscript writing should be 
-                        given credit for authorship. But as the rule for co-authorship varies across disciplines, the 
-                        Journal sets a minimum criterion for determining co-authorship: active participation in at least 
-                        two of the following key research processes (research conceptualization, implementation, data 
+                        Only those who have substantive contribution in the research and manuscript writing should be
+                        given credit for authorship. But as the rule for co-authorship varies across disciplines, the
+                        Journal sets a minimum criterion for determining co-authorship: active participation in at least
+                        two of the following key research processes (research conceptualization, implementation, data
                         analysis, and writing of manuscript). Those who do not meet this should not be credited as authors;
                         they should be included in the Acknowledgments instead.
                     </p>
@@ -129,53 +133,53 @@
 
                     <p>
                         <span class="guideline-heading">Authors’ consent and accountability</span>
-                        All authors identified in the manuscript are assumed to have given their consent for the submission 
-                        of the manuscript to the Journal. Moreover, in the review process, the Corresponding Author is 
-                        assumed to be passing on and discussing all matters raised by the Editor-in-Chief and the 
-                        reviewers to all authors involved. Thus, when the manuscript is published, it is also assumed 
+                        All authors identified in the manuscript are assumed to have given their consent for the submission
+                        of the manuscript to the Journal. Moreover, in the review process, the Corresponding Author is
+                        assumed to be passing on and discussing all matters raised by the Editor-in-Chief and the
+                        reviewers to all authors involved. Thus, when the manuscript is published, it is also assumed
                         that all authors have agreed to its final form and content and will be equally accountable for it.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Disclosure and conflicts of interest</span>
-                        Sources of financial support for the research should be disclosed by authors in the Acknowledgements 
-                        section. Likewise, any potential conflict of interest that the authors have vis-à-vis the research 
+                        Sources of financial support for the research should be disclosed by authors in the Acknowledgements
+                        section. Likewise, any potential conflict of interest that the authors have vis-à-vis the research
                         project should be declared.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Research misconduct</span>
-                        Any research misconduct discovered after the publication of articles (including plagiarism and 
-                        falsification of data) will be investigated. If validated, the concerned articles may be 
-                        retracted but only after the author/s would have been given the chance to explain their side. 
-                        In cases of article retraction, the institutional affiliations of the authors shall also be notified. 
+                        Any research misconduct discovered after the publication of articles (including plagiarism and
+                        falsification of data) will be investigated. If validated, the concerned articles may be
+                        retracted but only after the author/s would have been given the chance to explain their side.
+                        In cases of article retraction, the institutional affiliations of the authors shall also be notified.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Archiving and dissemination of article by authors</span>
-                        As soon as an article gets published in the PeJARD, the authors can deposit the article 
-                        (in PDF as published) in their personal websites, institutional repositories, or other databases. 
+                        As soon as an article gets published in the PeJARD, the authors can deposit the article
+                        (in PDF as published) in their personal websites, institutional repositories, or other databases.
                         They can also disseminate the article without having to inform the Journal.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Author corrections</span>
-                        If an author discovers problems/mistakes in his/her work after this was published, it is his/her 
-                        responsibility to have the problem addressed. Such corrections from authors shall be published 
-                        by the Journal in the Erratum section. For this, requests for corrections shall be done in 
-                        writing by the authors to the Editor. 
+                        If an author discovers problems/mistakes in his/her work after this was published, it is his/her
+                        responsibility to have the problem addressed. Such corrections from authors shall be published
+                        by the Journal in the Erratum section. For this, requests for corrections shall be done in
+                        writing by the authors to the Editor.
                     </p>
 
                     <p>
                         <span class="guideline-heading">Reader comments</span>
-                        Any party who detects errors in a published article may communicate this with the Editor. 
-                        If warranted, these will be published in the section ‘Communications to the Editor.’ 
+                        Any party who detects errors in a published article may communicate this with the Editor.
+                        If warranted, these will be published in the section ‘Communications to the Editor.’
                     </p>
 
                     <p>
                         <span class="guideline-heading">Archiving of submitted manuscripts</span>
-                        The original PDF files of all manuscripts submitted to the journal shall be archived in the 
-                        journal repository, whether or not these are published by the journal. The archived manuscripts 
+                        The original PDF files of all manuscripts submitted to the journal shall be archived in the
+                        journal repository, whether or not these are published by the journal. The archived manuscripts
                         shall not be made public and will be kept only for purposes of filing.
                     </p>
                 </section>
@@ -185,7 +189,7 @@
 
                     <p>
                         <span class="guideline-heading">Responsibilities</span>
-                        The reviewers’ main responsibility is to help ensure the quality of articles published by the 
+                        The reviewers’ main responsibility is to help ensure the quality of articles published by the
                         Journal, through the following measures:
                     </p>
 
