@@ -18,6 +18,14 @@ h3 {
     font-size: 110%;
 }
 
+a {
+	color: #2138EF;
+}
+
+a:hover {
+	color: #2138EF;
+}
+
 /* Header */
 #brand {
     width: 145px;
@@ -94,7 +102,7 @@ section .article a {
 	background-color: rgb(10, 65, 158);
 	border: 3px solid #ffffff;
 	font-size: 130%;
-	color: gold;
+	color: #FFA534;
 }
 
 /* Footer */
