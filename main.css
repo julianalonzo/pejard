@@ -84,10 +84,22 @@ section .article {
     line-height: 1.10;
 }
 
-section .article a {
+section .article a, .guideline-heading {
     display: inline-block;
     width: 100%;
     font-style: normal;
+}
+
+section.guidelines p {
+	text-indent: 0;
+}
+
+.guideline-heading {
+	font-weight: bold;
+}
+
+.guideline-list {
+	padding-left: 60px;
 }
 
 /* Archive Button */
