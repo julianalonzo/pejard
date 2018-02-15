@@ -149,6 +149,12 @@ section.guidelines p {
 	color: rgb(231, 142, 35);
 }
 
+.author-guidelines {
+    list-style: upper-roman;
+    display: block;
+    clear: both;
+}
+
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
