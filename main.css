@@ -181,14 +181,13 @@ ol.author-guidelines > li > ol > li:before {
     margin-left: 30px;
 }
 
-span.name {
-    text-transform: uppercase;
+table {
+    display: inline-block;
 }
 
-.editors-wrapper {
-    padding-left: 40px;
+table > * {
+    display: inline;
 }
-
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
