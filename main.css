@@ -42,6 +42,12 @@ ul {
     color: #ffffff;
 }
 
+hr {
+    width: 80%;
+    border: 1px solid #cccccc;
+    margin: 20px auto;
+}
+
 /* Header */
 #brand {
     width: 145px;
@@ -200,6 +206,18 @@ table > * {
 
 tr.row {
     margin-bottom: 5px;
+}
+
+div.council-container {
+    margin: 30px 0;
+}
+
+div.council-container p {
+    text-indent: 0;
+}
+
+div.council-container i {
+    font-size: 110%;
 }
 
 /* Footer */
