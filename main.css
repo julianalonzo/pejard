@@ -1,8 +1,9 @@
 /* Global */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Calibri, sans-serif;
     color: #ffffff;
     background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;
+    min-height: 100vh;
 }
 
 .bg-primary-accent {
@@ -10,12 +11,17 @@ body {
 }
 
 h1 {
-    font-size: 160%;
-    font-family: "Times New Roman", serif;
+    font-size: 110%;
 }
 
 h3 {
+    font-size: 80%;
+}
+
+h4 {
     font-size: 110%;
+    font-weight: bold;
+    margin: 0;
 }
 
 a {
@@ -24,10 +30,6 @@ a {
 
 a:hover {
 	color: rgb(9, 33, 234);
-}
-
-ul {
-    padding-right: 30px;
 }
 
 .button {
@@ -50,11 +52,11 @@ hr {
 
 /* Header */
 #brand {
-    width: 145px;
+    width: 100px;
 }
 
 #open-access {
-    width: 100px;
+    width: 90px;
 }
 
 /* Navigation */
@@ -80,35 +82,63 @@ ul.navbar-nav > li {
 }
 
 /* Body */
-main {
+#main-content {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 30px 50px;
+    padding: 10px;
 }
 
 section {
     background-color: #ffffff;
     color: #000000;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
+}
+
+.card {
+    border: none;
+    margin-bottom: 5px;
+}
+
+.card-header {
+    background-color: rgb(10, 65, 158);
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.card-header:first-child {
+    border: none;
+    border-radius: 0;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body p {
+    margin-bottom: 1em;
+}
+
+.card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 90%;
 }
 
 section h2 {
-    background-color: rgb(10, 65, 158);
     color: #ffffff;
-    padding: 10px 20px;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 section h3 {
     padding: 10px 20px;
     font-size: 120%;
-    margin-bottom: 10px;
     font-weight: bold;
 }
 
-section p {
-    padding: 0 20px;
-	text-indent: 40px;
+section ul {
+    padding-left: 20px;
+    margin-bottom: 0;
 }
 
 section ul.articles-list {
@@ -121,7 +151,6 @@ section ul.articles-list li {
 }
 
 #download-button {
-    float: right;
     margin: 20px 20px 20px 0;
 }
 
@@ -223,62 +252,21 @@ div.council-container i {
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
-    padding: 20px 40px;
-    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 80%;
 }
 
 footer p {
-    width: 80%;
-    margin: 0 auto;
+    line-height: 1;
+    text-align: center;
+    font-size: 80%;
 }
 
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-    #brand {
-        width: 100px;
-    }
-
-    header h1 {
-        font-size: 130%;
-    }
-
-    header h3 {
-        font-size: 100%;
-    }
-
-    section h2 {
-        text-align: center;
-    }
-
-    section p {
-        text-indent: 0;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767px) {
-    main {
-        padding: 5px 10px;
-    }
-
-    #download-button {
-        float: none;
-        margin-right: 0;
-    }
-
-    .wrapper {
-        text-align: center;
-    }
-
-    .guideline-list {
-    	padding: 0 40px;
-    }
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991px) {
-    main {
-        padding: 5px 10px;
-    }
+#ccby {
+    width: 80px;
 }
