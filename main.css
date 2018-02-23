@@ -302,6 +302,10 @@ footer ul li a:hover {
     text-decoration: none;
 }
 
+#site-map li.current a {
+    color: rgb(231, 142, 35);
+}
+
 footer p {
     line-height: 1;
     text-align: center;
