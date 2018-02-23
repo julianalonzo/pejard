@@ -101,6 +101,7 @@ section {
     background-color: rgb(10, 65, 158);
     padding: 5px;
     padding-bottom: 0;
+    cursor: pointer;
 }
 
 .card-header:first-child {
@@ -128,6 +129,24 @@ section {
 section h2 {
     color: #ffffff;
     font-size: 110%;
+}
+
+.simple .card-header {
+    background-color: transparent;
+    padding: 0;
+}
+
+.simple .card-header h2 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.simple .simple-collapse .card-body {
+    padding: 0 1em;
+}
+
+.simple .icon {
+    color: #000000;
 }
 
 section h3 {
@@ -160,17 +179,6 @@ section ul.articles-list li:last-child {
     background-color: rgb(10, 65, 158);
     color: #ffffff;
     padding: 5px 10px;
-    margin-bottom: 10px;
-}
-
-.accordion {
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.accordion .card {
-    border: 1px solid rgb(10, 65, 158);
 }
 
 #download-button {
