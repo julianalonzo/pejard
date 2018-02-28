@@ -45,9 +45,7 @@ a:hover {
 }
 
 hr {
-    width: 80%;
     border: 1px solid #cccccc;
-    margin: 20px auto;
 }
 
 /* Header */
@@ -147,6 +145,27 @@ section h2 {
     padding: 1em;
 }
 
+.simple .simple-collapse .no-padding {
+    padding: 0;
+}
+
+.no-padding .container .card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.no-padding .container .card-header h3 {
+    font-size: 105%;
+}
+
+.no-padding .container .card-header .icon {
+    color: #000000;
+}
+
+.no-padding .container .card-body {
+    padding: 0 20px;
+}
+
 .divider-card {
     margin: 20px 0;
 }
@@ -155,13 +174,7 @@ section h2 {
     margin-top: 20px;
 }
 
-section h3 {
-    padding: 10px 20px;
-    font-size: 120%;
-    font-weight: bold;
-}
-
-section ul {
+section ul, section ol {
     padding-left: 20px;
     margin-bottom: 0;
 }
@@ -201,18 +214,16 @@ section.guidelines p {
 	text-indent: 0;
 }
 
-.guideline-heading {
-	font-weight: bold;
-}
-
-.guideline-list {
-	padding-left: 60px;
-}
-
 .section-divider {
 	background-color: transparent;
 	text-align: center;
     margin: 20px 0;
+}
+
+h2.simple-header {
+    background-color: rgb(10, 65, 158);
+    padding: 5px 15px;
+    margin: 0;
 }
 
 #archive-button {
@@ -220,71 +231,6 @@ section.guidelines p {
 	border: 2px solid #ffffff;
 	font-size: 110%;
 	color: rgb(231, 142, 35);
-}
-
-.author-guidelines {
-    list-style: upper-roman;
-    display: block;
-    clear: both;
-    padding: 0 40px;
-}
-
-.author-guidelines > li {
-    counter-increment: root;
-    padding-top: 20px;
-}
-
-ol.author-guidelines > li > ol {
-    counter-reset: subsection;
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-ol.author-guidelines > li > ol > li {
-    counter-increment: subsection;
-    padding: 5px 0;
-}
-
-ol.author-guidelines > li > ol > li:before {
-    content: counter(root) "." counter(subsection) ". ";
-}
-
-.definition-indent {
-    display: block;
-    margin-left: 30px;
-}
-
-#editorial-board h3 {
-    font-size: 150%;
-}
-
-table {
-    display: inline-block;
-    margin-bottom: 25px;
-}
-
-table.container {
-    padding-left: 40px;
-}
-
-table > * {
-    display: inline;
-}
-
-tr.row {
-    margin-bottom: 5px;
-}
-
-div.council-container {
-    margin: 30px 0;
-}
-
-div.council-container p {
-    text-indent: 0;
-}
-
-div.council-container i {
-    font-size: 110%;
 }
 
 /* Footer */
