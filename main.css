@@ -233,6 +233,18 @@ h2.simple-header {
 	color: rgb(231, 142, 35);
 }
 
+td {
+    text-align: center;
+}
+
+tr {
+    margin-bottom: 25px;
+}
+
+table tr.no-row-margin {
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
