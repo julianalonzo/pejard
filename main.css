@@ -92,9 +92,13 @@ section {
     color: #000000;
 }
 
+.section-wrapper h1 {
+    margin-bottom: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
 .card {
     border: none;
-    margin-bottom: 10px;
 }
 
 .card-header {
@@ -102,10 +106,12 @@ section {
     padding: 5px;
     padding-bottom: 0;
     cursor: pointer;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .card-header:first-child {
-    border: none;
     border-radius: 0;
 }
 
@@ -124,29 +130,29 @@ section {
 .icon {
     color: #ffffff;
     font-size: 90%;
+    text-align: right;
 }
 
 section h2 {
-    color: #ffffff;
     font-size: 110%;
+    color: #ffffff;
 }
 
 .simple .card-header {
-    background-color: transparent;
-    padding: 0;
-}
-
-.simple .card-header h2 {
-    color: #000000;
-    font-weight: bold;
+    background-color: rgb(10, 65, 158);
+    border-bottom: 1px solid #cccccc;
 }
 
 .simple .simple-collapse .card-body {
-    padding: 0 1em;
+    padding: 1em;
 }
 
-.simple .icon {
-    color: #000000;
+.divider-card {
+    margin: 20px 0;
+}
+
+.divider-section {
+    margin-top: 20px;
 }
 
 section h3 {
