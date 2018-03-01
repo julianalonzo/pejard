@@ -245,6 +245,34 @@ table tr.no-row-margin {
     margin-bottom: 0;
 }
 
+.council-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.council-container p {
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.council-container .council-title {
+    font-size: 120%;
+    font-style: italic;
+}
+
+.council-container .council-name {
+    font-weight: bold;
+}
+
+.universities-container .university {
+    padding-bottom: 20px;
+}
+
+.universities-container .university .university-logo {
+    width: 70px;
+}
+
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);

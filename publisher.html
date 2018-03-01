@@ -10,24 +10,24 @@
 
         <link rel="stylesheet" href="main.css">
 
-        <title>Home - Philippine e-Journal for Applied Research and Development</title>
+        <title>Publisher - Philippine e-Journal for Applied Research and Development</title>
     </head>
 
     <body>
         <div class="container">
-            <header class="row align-items-center no-gutters justify-content-center">
-                <div class="col-lg-2 text-center">
+            <header class="row">
+                <div class="col-12 text-center">
                     <a href="index.html"><img id="brand" src="img/pejard.png" alt="logo"></a>
                 </div>
 
-                <div class="col-lg-10">
+                <div class="col-12">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col">
                             <h1 class="text-center">Philippine e-Journal for Applied Research and Development</h1>
                             <div class="row align-items-center justify-content-center">
-                                <div class="col-lg-5"><h3 class="text-center">pejard.slu.edu.ph</h3></div>
-                                <div class="col-lg-2 text-center"><img id="open-access" src="img/openaccess.png" alt="open access"></div>
-                                <div class="col-lg-5"><h3 class="text-center">ISSN 2449-3694 (Online)</h3></div>
+                                <div class="col-4"><h3 class="text-center">pejard.slu.edu.ph</h3></div>
+                                <div class="col-4 text-center"><img id="open-access" src="img/openaccess.png" alt="open access"></div>
+                                <div class="col-4"><h3 class="text-center">ISSN 2449-3694 (Online)</h3></div>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             <a class="nav-link" href="articles.html">Articles</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="editorial.html">Editorial Policy</a>
+                            <a class="nav-link" href="editorial_policy.html">Editorial Policy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="author_guidelines.html">Author Guidelines</a>
@@ -56,8 +56,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="editorial_board.html">Editorial Board</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Publisher</a>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="publisher.html">Publisher</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -66,75 +66,167 @@
                 </div>
             </nav>
 
-            <main>
-                <section>
-                    <h2 class="text-center">Publisher</h2>
+            <main id="main-content">
+                <section class="card container">
+                    <div class="card-header row" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="col-10">
+                            <h2>Publisher</h2>
+                        </div>
 
-                    <p>The PeJARD is jointly published and financed by the CICM institutions of higher learning in the 
-                    Philippines, namely, <a href="http://www.smu.edu.ph/">Saint Mary’s University</a> (Bayombong, Nueva Vizcaya), 
-                    <a href="http://www.slc-sflu.edu.ph/">Saint Louis College</a> (City of San Fernando, La Union), 
-                    <a href="http://www.slu.edu.ph/">Saint Louis University</a> (Baguio City), and 
-                    <a href="http://www.usl.edu.ph/">University of Saint Louis</a> (Tuguegarao City). 
-                    Its seat of operation and editorial address is located at the Research and Development Office, Saint Louis 
-                    University, Baguio City.</p>
+                        <div class="icon col-2"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+
+                    <div id="collapseOne" class="collapse row" aria-labelledby="headingOne">
+                        <div class="card-body col-12">
+                            <p>The PeJARD is jointly published and financed by
+                            the CICM institutions of higher learning in the
+                            Philippines, namely, <a href="http://www.smu.edu.ph/">Saint Mary’s University</a>
+                            (Bayombong, Nueva Vizcaya), <a href="http://www.slc-sflu.edu.ph/">Saint Louis College</a>
+                            (City of San Fernando, La Union), <a href="http://www.slu.edu.ph/">Saint Louis
+                            University</a> (Baguio City), and <a href="University of Saint Louis">University of Saint
+                            Louis</a> (Tuguegarao City). Its seat of operation and
+                            editorial address is located at the Research and
+                            Development Office, Saint Louis University, Baguio
+                            City.</p>
+                        </div>
+                    </div>
                 </section>
 
-                <section>
-                    <h2 class="text-center">Journal Consortium Advisory Council</h2>
+                <section class="card container">
+                    <div class="card-header row" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="col-10">
+                            <h2>Journal Consortium Advisory Council</h2>
+                        </div>
 
-                    <div class="council-container text-center">
-                        <p>
-                            <i>Chair</i><br>
-                            <b>FR. GILBERT B. SALES, CICM</b><br>
-                            Saint Louis University
-                        </p>
+                        <div class="icon col-2"><i class="fas fa-chevron-down"></i></div>
                     </div>
 
-                    <div class="council-container text-center">
-                        <p>
-                            <i>Co-Chair</i><br>
-                            <b>GASTON P. KIBITEN, PhD</b><br>
-                            Assistant Vice President<br>
-                            Research and Development Office<br>
-                            Saint Louis University
-                        </p>
-                    </div>
+                    <div id="collapseTwo" class="collapse row" aria-labelledby="headingTwo">
+                        <div class="card-body col-12">
+                            <div class="council-container">
+                                <p class="council-title">Chair</p>
+                                <p class="council-name">FR. GILBERT B. SALES, CICM</p>
+                                <p>Saint Louis University</p>
+                            </div>
 
-                    <hr>
+                            <div class="council-container">
+                                <p class="council-title">Co-Chair</p>
+                                <p class="council-name">GASTON P. KIBITEN, PhD</p>
+                                <p>Assistant Vice President</p>
+                                <p>Research and Development Office</p>
+                                <p>Saint Louis University</p>
+                            </div>
 
-                    <div class="council-container text-center">
-                        <p>
-                            <i>Members</i><br><br>
-                            <b>DANIEL B. PAGUIA, PhD</b><br>
-                            Research Officer<br>
-                            Saint Louis College<br>
-                        </p>
-                    </div>
+                            <hr>
 
-                    <div class="council-container text-center">
-                        <p>
-                            <b>FE YOLANDA G. DEL ROSARIO, PhD</b><br>
-                            Director<br>
-                            Research Center<br>
-                            Saint Mary's University
-                        </p>
-                    </div>
+                            <div class="council-container">
+                                <p class="council-title">Members</p>
+                            </div>
 
-                    <div class="council-container text-center">
-                        <p>
-                            <b>MARY JEAN MENDEZABAL, PhD</b><br>
-                            Director<br>
-                            Office of the University Research Center<br>
-                            University of Saint Louis Tuguegarao
-                        </p>
+                            <div class="council-container">
+                                <p class="council-name">DANIEL B. PAGUIA, PhD</p>
+                                <p>Research Officer</p>
+                                <p>Saint Louis College</p>
+                            </div>
+
+                            <div class="council-container">
+                                <p class="council-name">FE YOLANDA G. DEL ROSARIO, PhD</p>
+                                <p>Director</p>
+                                <p>Research Center</p>
+                                <p>Saint Mary's University</p>
+                            </div>
+
+                            <div class="council-container">
+                                <p class="council-name">MARY JEAN MENDEZABAL, PhD</p>
+                                <p>Director</p>
+                                <p>Office of the University Research Center</p>
+                                <p>University of Saint Louis Tuguegarao</p>
+                            </div>
+
+                            <div class="container universities-container">
+                                <div class="row">
+                                    <div class="col-6 university text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="http://www.slc-sflu.edu.ph/">
+                                                    <img src="img/slc.png" alt="slc" class="university-logo">
+                                                </a>
+                                            </div>
+                                            <div class="col-12">
+                                                <a href="http://www.slc-sflu.edu.ph/" class="university-name">
+                                                    Saint Louis College
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 university text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="http://www.smu.edu.ph/">
+                                                    <img src="img/smu.png" alt="slc" class="university-logo">
+                                                </a>
+                                            </div>
+                                            <div class="col-12">
+                                                <a href="http://www.smu.edu.ph/" class="university-name">
+                                                    Saint Mary's University
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 university text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="http://www.slu.edu.ph/">
+                                                    <img src="img/slu.png" alt="slc" class="university-logo">
+                                                </a>
+                                            </div>
+                                            <div class="col-12">
+                                                <a href="http://www.slu.edu.ph/" class="university-name">
+                                                    Saint Louis University
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 university text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <a href="http://www.usl.edu.ph/">
+                                                    <img src="img/usl.png" alt="slc" class="university-logo">
+                                                </a>
+                                            </div>
+                                            <div class="col-12">
+                                                <a href="http://www.usl.edu.ph/" class="university-name">
+                                                    University of Saint Louis
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
 
-            <footer>
-                <p>The Philippine e-Journal for Applied Research and Development is licensed under a
-                Creative Commons Attribution 4.0 International License.</p>
-                <img src="img/ccby.png" alt="CCBY">
+            <footer class="container">
+                <h4>Map Site</h4>
+
+                <div class="footer-wrapper row">
+                    <nav class="col-6">
+                        <ul id="site-map">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="articles.html">Articles</a></li>
+                            <li><a href="editorial_policy.html">Editorial Policy</a></li>
+                            <li><a href="author_guidelines.html">Author Guidelines</a></li>
+                            <li><a href="editorial_board.html">Editorial Board</a></li>
+                            <li class="current"><a href="publisher.html">Publisher</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="col-6">The Philippine e-Journal for Applied Research and Development is licensed under a
+                    Creative Commons Attribution 4.0 International License.<img src="img/ccby.png" alt="CCBY" id="ccby"></p>
+                </div>
             </footer>
         </div>
 
@@ -143,5 +235,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     </body>
 </html>
