@@ -273,6 +273,24 @@ table tr.no-row-margin {
     width: 70px;
 }
 
+.box-center {
+    margin: 0 auto;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+.box-center address {
+    padding: 0;
+    margin: 0;
+}
+
+.box-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%;
+}
+
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
