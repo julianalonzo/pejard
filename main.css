@@ -49,6 +49,10 @@ hr {
 }
 
 /* Header */
+header {
+    margin-bottom: 10px;
+}
+
 #brand {
     width: 100px;
 }
@@ -325,3 +329,112 @@ footer p {
 #ccby {
     width: 80px;
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    p, li, td, address {
+        font-size: 120%;
+    }
+
+    a {
+        font-size: 105%;
+    }
+
+    h4 {
+        font-size: 150%;
+    }
+
+    #container {
+        padding: 0 40px;
+    }
+
+    /* Header */
+    #brand {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 140%;
+    }
+
+    header h3 {
+        font-size: 120%
+    }
+
+    #open-access {
+        width: 130px;
+    }
+
+    /* Navigation */
+    .nav-item {
+        font-size: 100%;
+    }
+
+    /* Body */
+    #main-content {
+        padding: 25px;
+    }
+
+    .card-header {
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .card-body {
+        padding: 1.5em;
+    }
+
+    .section-wrapper h1 {
+        font-size: 150%;
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 130%;
+    }
+
+    .icon {
+        font-size: 120%;
+    }
+
+    .no-padding .container .card-header h3 {
+        font-size: 130%;
+    }
+
+    .simple .simple-collapse .card-body {
+        padding: 1.5em;
+    }
+
+    p.box-title {
+        font-size: 140%;
+    }
+
+    /* Footer */
+    footer h4 {
+        display: none;
+    }
+
+    footer p {
+        font-size: 100%;
+    }
+
+    footer ul {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer ul li {
+        display: inline;
+        padding: 5px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+
+} */
