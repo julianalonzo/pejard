@@ -1,11 +1,6 @@
 /* Global */
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url("font/SourceSansPro-Regular.otf");
-}
-
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Calibri, sans-serif;
     color: #ffffff;
     background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;
     min-height: 100vh;
@@ -101,32 +96,12 @@ section {
 
 .section-wrapper h1 {
     margin-bottom: 0;
-}
-
-input {
-    display: none;
-}
-
-.fa-chevron-up {
-    display: none;
-}
-
-.card :checked ~ label .icon .fa-chevron-up {
-    display: inline-block;
-}
-
-.card :checked ~ label .icon .fa-chevron-down {
-    display: none;
+    border-bottom: 1px solid #cccccc;
 }
 
 .card {
     border: none;
     border-radius: 0;
-    margin-bottom: 5px;
-}
-
-.card:last-child {
-    margin-bottom: 0;
 }
 
 .card-header {
@@ -134,11 +109,9 @@ input {
     padding: 5px;
     padding-bottom: 0;
     cursor: pointer;
-    border: 0;
+    border-bottom: 1px solid white;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    text-align: left;
-    outline: none;
 }
 
 .card-header:first-child {
@@ -150,7 +123,7 @@ input {
 }
 
 .card-body p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .card-body p:last-child {
@@ -166,10 +139,6 @@ input {
 section h2 {
     font-size: 110%;
     color: #ffffff;
-}
-
-section .simple {
-    margin-bottom: 0;
 }
 
 .simple .card-header {
@@ -527,10 +496,6 @@ footer p {
 
     #main-content .card-body {
         padding: 1.5em;
-    }
-
-    section .collapse {
-        display: block !important;
     }
 
     .simple .card-header {
