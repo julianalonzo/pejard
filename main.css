@@ -207,6 +207,10 @@ section h2 {
     color: #ffffff;
 }
 
+section h3 {
+    font-size: 110%;
+}
+
 .section-wrapper h1 {
     text-align: center;
     font-size: 120%;
@@ -216,7 +220,8 @@ section h2 {
 }
 
 section ul, section ol {
-    padding-left: 20px;
+    margin-left: 20px;
+    padding-left: 0;
     margin-bottom: 0;
 }
 
@@ -258,6 +263,55 @@ section ul.articles-list li:last-child {
 	border: 2px solid #ffffff;
 	font-size: 110%;
 	color: rgb(231, 142, 35);
+}
+
+ol.author-guideline-main-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ol.author-guideline-main-list h3 {
+    padding-top: 2px;
+}
+
+ol.author-guideline-main-list > li {
+    counter-increment: root;
+}
+
+ol.author-guideline-main-list > li ol {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ol.author-guideline-main-list > li ol > li ol {
+    padding-left: 0;
+    margin-left: 45px;
+}
+
+ol.author-guideline-main-list > li ol > li p {
+    padding-left: 0;
+    margin-left: 30px;
+}
+
+ol.author-guideline-main-list .card-body > ol {
+    counter-reset: subsection;
+    list-style-type: none;
+}
+
+ol.author-guideline-main-list .card-body > ol > li {
+    counter-increment: subsection;
+    margin-bottom: 20px;
+}
+
+ol.author-guideline-main-list .card-body > ol > li:before {
+    content: counter(root) "." counter(subsection) ". ";
+    float: left;
+    margin-right: 5px;
+}
+
+ol.author-guideline-main-list .card-body > ol > li:last-child {
+    margin-bottom: 0;
 }
 
 .board-group {
