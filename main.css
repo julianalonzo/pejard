@@ -1,6 +1,11 @@
-/* Global */
+/* Universal */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("font/SourceSansPro-Regular.otf");
+}
+
 body {
-    font-family: Calibri, sans-serif;
+    font-family: "Source Sans Pro", Calibri, sans-serif;
     color: #ffffff;
     background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;
     min-height: 100vh;
@@ -46,6 +51,8 @@ a:hover {
 
 hr {
     border: 1px solid #cccccc;
+    width: 90%;
+    margin: 5px auto;
 }
 
 /* Header */
@@ -89,27 +96,39 @@ ul.navbar-nav > li {
     padding: 10px;
 }
 
+.section-wrapper {
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+
+#main-content > .section-wrapper:last-of-type {
+    margin-bottom: 0;
+}
+
 section {
     background-color: #ffffff;
     color: #000000;
 }
 
 .section-wrapper h1 {
-    margin-bottom: 0;
-    border-bottom: 1px solid #cccccc;
+    margin-bottom: 5px;
 }
 
 .card {
     border: none;
     border-radius: 0;
+    margin-bottom: 5px;
+}
+
+#main-content > .card:last-of-type {
+    margin-bottom: 0;
 }
 
 .card-header {
     background-color: rgb(10, 65, 158);
-    padding: 5px;
+    padding: 10px;
     padding-bottom: 0;
     cursor: pointer;
-    border-bottom: 1px solid white;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -136,6 +155,28 @@ section {
     text-align: right;
 }
 
+.show-icon {
+    -webkit-animation-name: spin;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.1s;
+
+    animation-name: spin;
+    animation-fill-mode: forwards;
+    animation-duration: 0.1s;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(90deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
 section h2 {
     font-size: 110%;
     color: #ffffff;
@@ -143,7 +184,7 @@ section h2 {
 
 .simple .card-header {
     background-color: rgb(10, 65, 158);
-    border-bottom: 1px solid #cccccc;
+    border-bottom: none;
 }
 
 .simple .simple-collapse .card-body {
@@ -176,7 +217,7 @@ section h2 {
 }
 
 .divider-card {
-    margin: 20px 0;
+    margin-bottom: 30px;
 }
 
 .divider-section {
@@ -212,6 +253,8 @@ section ul.articles-list li:last-child {
 #download-section {
     padding: 10px 20px;
     text-align: center;
+    background-color: transparent;
+    margin-bottom: 5px;
 }
 
 #download-button {
@@ -234,7 +277,7 @@ section.guidelines p {
 .section-divider {
 	background-color: transparent;
 	text-align: center;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 h2.simple-header {
@@ -307,6 +350,25 @@ table tr.no-row-margin {
     font-weight: bold;
     font-size: 110%;
 }
+
+section.section-wrapper.visible-background {
+    background-color: #ffffff;
+}
+
+.board-group {
+    padding: 10px 20px;
+}
+
+.board-group > h2 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+}
+
+/* .not-collapsable > .card {
+    margin-bottom: 10px;
+} */
 
 /* Footer */
 footer {
@@ -439,6 +501,7 @@ footer p {
     footer ul li {
         display: inline;
         padding: 5px;
+        font-size: 115%;
     }
 }
 

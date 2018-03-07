@@ -1,11 +1,11 @@
 function changeChevronIcon() {
     $('#main-content .always-show').addClass('show').css("height", "auto");
-    $('#main-content .always-show').prev().find('.fa-chevron-down').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    $('#main-content .always-show').siblings().find('.fa-chevron-right').addClass('show-icon');
 
-    $('.collapse').on('shown.bs.collapse', function() {
-        $(this).prev().find('.fa-chevron-down').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    $('.collapse').on('show.bs.collapse', function() {
+        $(this).siblings().find('.fa-chevron-right').addClass('show-icon');
     }).on('hidden.bs.collapse', function() {
-        $(this).prev().find('.fa-chevron-up').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        $(this).siblings().find('.fa-chevron-right').removeClass('show-icon');
     });
 }
 
@@ -14,7 +14,7 @@ function adjustCollapseView() {
         if (viewportWidth >= 992) {
             $('.card-header').attr("data-toggle", "");
             $('#main-content .collapse').addClass('show').css("height", "auto");
-            $('.collapse').prev().find('.fa-chevron-up').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            $('.collapse').siblings().find('.fa-chevron-right').removeClass('show-icon');
         } else {
             $('.card-header').attr("data-toggle", "collapse");
             $('#main-content .collapse').removeClass("show").css("height", 0);
@@ -25,8 +25,11 @@ function adjustCollapseView() {
 
 $(function() {
     adjustCollapseView();
+    var initialWidth = $(window).width();
+    var orientation = window.orientation;
+
     $(window).on("resize", function() {
-        if ($(window).width() >= 992) {
+        if (initialWidth != $(window).width() && orientation == undefined) {
             adjustCollapseView();
         }
     });
