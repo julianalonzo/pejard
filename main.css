@@ -101,27 +101,15 @@ ul.navbar-nav > li {
     margin-bottom: 40px;
 }
 
-#main-content > .section-wrapper:last-of-type {
-    margin-bottom: 0;
-}
-
 section {
     background-color: #ffffff;
     color: #000000;
-}
-
-.section-wrapper h1 {
-    margin-bottom: 5px;
 }
 
 .card {
     border: none;
     border-radius: 0;
     margin-bottom: 5px;
-}
-
-#main-content > .card:last-of-type {
-    margin-bottom: 0;
 }
 
 .card-header {
@@ -147,6 +135,31 @@ section {
 
 .card-body p:last-child {
     margin-bottom: 0;
+}
+
+.simple .card-header {
+    background-color: rgb(10, 65, 158);
+    border-bottom: none;
+}
+
+.simple .simple-collapse .card-body {
+    padding: 1em;
+}
+
+.simple .simple-collapse .card-body > h3 {
+    font-size: 100%;
+}
+
+.divider-card {
+    margin-bottom: 30px;
+}
+
+.divider-section {
+    margin-top: 20px;
+}
+
+section.section-wrapper.visible-background {
+    background-color: #ffffff;
 }
 
 .icon {
@@ -177,51 +190,29 @@ section {
     }
 }
 
+#main-content > .section-wrapper:last-of-type {
+    margin-bottom: 0;
+}
+
+.section-wrapper h1 {
+    margin-bottom: 5px;
+}
+
+#main-content > .card:last-of-type {
+    margin-bottom: 0;
+}
+
 section h2 {
     font-size: 110%;
     color: #ffffff;
 }
 
-.simple .card-header {
+.section-wrapper h1 {
+    text-align: center;
+    font-size: 120%;
     background-color: rgb(10, 65, 158);
-    border-bottom: none;
-}
-
-.simple .simple-collapse .card-body {
-    padding: 1em;
-}
-
-.simple .simple-collapse .card-body > h3 {
-    font-size: 100%;
-}
-
-.simple .simple-collapse .no-padding {
-    padding: 0;
-}
-
-.no-padding .container .card-header {
-    background-color: transparent;
-    border: 0;
-}
-
-.no-padding .container .card-header h3 {
-    font-size: 105%;
-}
-
-.no-padding .container .card-header .icon {
-    color: #000000;
-}
-
-.no-padding .container .card-body {
-    padding: 0 20px;
-}
-
-.divider-card {
-    margin-bottom: 30px;
-}
-
-.divider-section {
-    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px 15px;
 }
 
 section ul, section ol {
@@ -242,14 +233,6 @@ section ul.articles-list li:last-child {
     margin: 0;
 }
 
-.section-wrapper h1 {
-    text-align: center;
-    font-size: 120%;
-    background-color: rgb(10, 65, 158);
-    color: #ffffff;
-    padding: 5px 10px;
-}
-
 #download-section {
     padding: 10px 20px;
     text-align: center;
@@ -264,26 +247,10 @@ section ul.articles-list li:last-child {
     text-align: center;
 }
 
-section .guideline-heading {
-    display: inline-block;
-    width: 100%;
-    font-style: normal;
-}
-
-section.guidelines p {
-	text-indent: 0;
-}
-
 .section-divider {
 	background-color: transparent;
 	text-align: center;
     margin: 40px 0;
-}
-
-h2.simple-header {
-    background-color: rgb(10, 65, 158);
-    padding: 5px 15px;
-    margin: 0;
 }
 
 #archive-button {
@@ -291,6 +258,17 @@ h2.simple-header {
 	border: 2px solid #ffffff;
 	font-size: 110%;
 	color: rgb(231, 142, 35);
+}
+
+.board-group {
+    padding: 10px 20px;
+}
+
+.board-group > h2 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
 }
 
 td {
@@ -351,25 +329,6 @@ table tr.no-row-margin {
     font-size: 110%;
 }
 
-section.section-wrapper.visible-background {
-    background-color: #ffffff;
-}
-
-.board-group {
-    padding: 10px 20px;
-}
-
-.board-group > h2 {
-    color: #000000;
-    font-weight: bold;
-    font-size: 120%;
-    text-align: center;
-}
-
-/* .not-collapsable > .card {
-    margin-bottom: 10px;
-} */
-
 /* Footer */
 footer {
     background-color: rgb(10, 65, 158);
@@ -407,18 +366,6 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    p, li, td, address {
-        font-size: 120%;
-    }
-
-    a {
-        font-size: 105%;
-    }
-
-    h4 {
-        font-size: 150%;
-    }
-
     #container {
         padding: 0 40px;
     }
