@@ -150,6 +150,10 @@ section h2 {
     padding: 1em;
 }
 
+.simple .simple-collapse .card-body > h3 {
+    font-size: 100%;
+}
+
 .simple .simple-collapse .no-padding {
     padding: 0;
 }
