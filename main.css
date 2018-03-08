@@ -58,6 +58,10 @@ header {
     margin-bottom: 10px;
 }
 
+#subheading h1 {
+    font-family: 'Times New Roman', serif;
+}
+
 #brand {
     width: 100px;
 }
@@ -300,13 +304,17 @@ ol.author-guideline-main-list .card-body > ol {
 
 ol.author-guideline-main-list .card-body > ol > li {
     counter-increment: subsection;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 ol.author-guideline-main-list .card-body > ol > li:before {
     content: counter(root) "." counter(subsection) ". ";
     float: left;
     margin-right: 5px;
+}
+
+ol.author-guideline-main-list .card-body > ol > li > ol > li {
+    margin-bottom: 15px;
 }
 
 ol.author-guideline-main-list .card-body > ol > li:last-child {
@@ -588,6 +596,10 @@ footer p {
         padding: 1em 1.5em;
     }
 
+    .card-header {
+        cursor: default;
+    }
+
     .card-body > p {
         text-indent: 30px;
     }
@@ -678,6 +690,7 @@ footer p {
     footer ul li {
         padding: 10px;
         text-transform: uppercase;
+        font-size: 120%;
     }
 
     footer .footer-wrapper p {
@@ -695,8 +708,42 @@ footer p {
         padding-top: 70px;
     }
 
+    #subheading h1 {
+        font-size: 200%;
+    }
+
     a.nav-link {
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    p, li, td, address {
+        font-size: 110%;
+    }
+
+    a {
+        font-size: 105%;
+    }
+
+    .simple .card-header h2 {
+        font-size: 115%;
+    }
+
+    .council-container p.council-title {
+        font-size: 140%;
+    }
+
+    ol.author-guideline-main-list {
+        padding-left: 25px;
+        margin-left: 25px;
+    }
+
+    ol.author-guideline-main-list li {
+        font-size: 105%;
+    }
+
+    footer ul li {
+        font-size: 130%;
+        padding: 15px;
     }
 }
