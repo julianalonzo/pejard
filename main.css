@@ -7,7 +7,10 @@
 body {
     font-family: "Source Sans Pro", Calibri, sans-serif;
     color: #ffffff;
-    background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;
+    /*background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;*/
+    background: url('img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed, fixed;
     min-height: 100vh;
 }
 
