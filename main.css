@@ -50,9 +50,7 @@ a:hover {
 }
 
 hr {
-    border: 1px solid #cccccc;
-    width: 90%;
-    margin: 5px auto;
+    display: none;
 }
 
 /* Header */
@@ -228,6 +226,7 @@ section ul, section ol {
 section ul.articles-list {
     list-style: none;
     padding: 0;
+    margin-left: 0;
 }
 
 section ul.articles-list li {
@@ -316,6 +315,7 @@ ol.author-guideline-main-list .card-body > ol > li:last-child {
 
 .board-group {
     padding: 10px 20px;
+    margin-bottom: 20px; 
 }
 
 .board-group > h2 {
@@ -330,7 +330,7 @@ td {
 }
 
 tr {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 table tr.no-row-margin {
@@ -453,11 +453,11 @@ footer p {
 
     .card-header {
         padding: 10px;
-        padding-top: 15px;
+        padding-bottom: 5px;
     }
 
     .card-body {
-        padding: 1.5em;
+        padding: 1em 1.5em;
     }
 
     .section-wrapper h1 {
@@ -477,8 +477,15 @@ footer p {
         padding: 1.5em;
     }
 
+    .box-center {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
     p.box-title {
         font-size: 140%;
+        margin-bottom: 0;
     }
 
     /* Footer */
@@ -513,11 +520,22 @@ footer p {
     }
 
     hr {
-        display: none;
+        width: 100%;
     }
 
     td {
         text-align: left;
+    }
+
+    tr {
+        margin-bottom: 5px;
+    }
+
+    hr {
+        display: block;
+        border: 1px solid #cccccc;
+        width: 100%;
+        margin: 5px auto;
     }
 
     .icon {
@@ -542,38 +560,71 @@ footer p {
         padding: 25px 50px;
     }
 
+    .section-wrapper {
+        background-color: #ffffff;
+    }
+
     .section-wrapper h1 {
         font-size: 130%;
     }
 
     #main-content ul, ol {
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     #main-content .card {
         margin-bottom: 30px;
     }
 
-    #main-content .card-body {
-        padding: 1.5em;
+    #main-content .section-wrapper .card {
+        margin-bottom: 10px;
+    }
+
+    #main-content .card:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .card-body {
+        padding: 1em 1.5em;
+    }
+
+    .card-body > p {
+        text-indent: 30px;
     }
 
     .simple .card-header {
         background-color: #ffffff;
         border: 0;
+    }
+
+    .no-indent .simple .card-header {
         padding-bottom: 0;
     }
 
     .simple .card-header h2 {
+        font-size: 110%;
         color: #000000;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    ol.author-guideline-main-list .simple .card-header h2 {
+        font-weight: normal;
+    }
+
+    .large-headers .simple .card-header h2 {
         font-size: 150%;
+    }
+
+    .no-indent p {
+        text-indent: 0;
     }
 
     #main-content .simple .collapse .card-body {
         padding: 5px 1.5em;
     }
 
-    section ul.articles-list {
+    #main-content ul.articles-list {
         margin-left: 30px;
     }
 
@@ -581,15 +632,42 @@ footer p {
         padding-bottom: 20px;
     }
 
+    ol.author-guideline-main-list {
+        list-style-type: upper-roman;
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+
     #archive-button {
     	padding: 10px 100px;
     	font-size: 150%;
-        margin-bottom: 15px;
     }
 
     #download-section {
         text-align: right;
         padding: 1.5em;
+    }
+
+    .divider-card h2 {
+        text-align: center;
+    }
+
+    .board-group {
+        margin-bottom: 10px;
+    }
+
+    .board-group h2 {
+        text-align: left;
+        font-size: 160%;
+    }
+
+    .universities-container {
+        margin-top: 50px;
+    }
+
+    .box-center {
+        padding: 5px;
+        width: 60%;
     }
 
     /* Footer */
