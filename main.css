@@ -7,7 +7,6 @@
 body {
     font-family: "Source Sans Pro", Calibri, sans-serif;
     color: #ffffff;
-    /*background: linear-gradient(to bottom, rgb(17, 96, 235), rgb(170, 204, 246)) no-repeat;*/
     background: url('img/background.jpg');
     background-size: cover;
     background-attachment: fixed, fixed;
@@ -103,7 +102,7 @@ ul.navbar-nav > li {
 
 .section-wrapper {
     background-color: transparent;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 section {
@@ -114,7 +113,11 @@ section {
 .card {
     border: none;
     border-radius: 0;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.card:last-of-type {
+    margin-bottom: 0;
 }
 
 .card-header {
@@ -199,11 +202,7 @@ section.section-wrapper.visible-background {
     margin-bottom: 0;
 }
 
-.section-wrapper h1 {
-    margin-bottom: 5px;
-}
-
-#main-content > .card:last-of-type {
+#main-content > .card:last-of-type, #main-content > .card:only-child {
     margin-bottom: 0;
 }
 
@@ -222,6 +221,15 @@ section h3 {
     background-color: rgb(10, 65, 158);
     color: #ffffff;
     padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.no-indent h1 {
+    margin-bottom: 0;
+}
+
+.no-indent h1:last-of-type {
+    margin-bottom: 10px;
 }
 
 section ul, section ol {
@@ -248,7 +256,7 @@ section ul.articles-list li:last-child {
     padding: 10px 20px;
     text-align: center;
     background-color: transparent;
-    margin-bottom: 5px;
+    margin: 15px 0;
 }
 
 #download-button {
@@ -261,7 +269,7 @@ section ul.articles-list li:last-child {
 .section-divider {
 	background-color: transparent;
 	text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 #archive-button {
@@ -283,6 +291,7 @@ ol.author-guideline-main-list h3 {
 
 ol.author-guideline-main-list > li {
     counter-increment: root;
+    margin-bottom: 30px;
 }
 
 ol.author-guideline-main-list > li ol {
@@ -310,7 +319,7 @@ ol.author-guideline-main-list .card-body > ol > li {
     margin-bottom: 30px;
 }
 
-ol.author-guideline-main-list .card-body > ol > li:before {
+ol.author-guideline-main-list .card-body > ol > li::before {
     content: counter(root) "." counter(subsection) ". ";
     float: left;
     margin-right: 5px;
@@ -327,6 +336,10 @@ ol.author-guideline-main-list .card-body > ol > li:last-child {
 .board-group {
     padding: 10px 20px;
     margin-bottom: 20px; 
+}
+
+.board-group:last-of-type {
+    margin-bottom: 0;
 }
 
 .board-group > h2 {
@@ -499,6 +512,10 @@ footer p {
         margin-bottom: 0;
     }
 
+    .no-indent h1 {
+        margin-bottom: 10px;
+    }
+
     /* Footer */
     footer h4 {
         display: none;
@@ -661,6 +678,7 @@ footer p {
     #download-section {
         text-align: right;
         padding: 1.5em;
+        margin: 0;
     }
 
     .divider-card h2 {
@@ -743,6 +761,10 @@ footer p {
 
     ol.author-guideline-main-list li {
         font-size: 105%;
+    }
+
+    ol.author-guideline-main-list h3 {
+        padding-top: 1px;
     }
 
     footer ul li {
