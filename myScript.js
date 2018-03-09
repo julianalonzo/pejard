@@ -26,10 +26,9 @@ function adjustCollapseView() {
 $(function() {
     adjustCollapseView();
     var initialWidth = $(window).width();
-    var orientation = window.orientation;
 
     $(window).on("resize", function() {
-        if (initialWidth != $(window).width() && orientation == undefined) {
+        if (initialWidth != $(window).width() && typeof window.orientation == "undefined") {
             adjustCollapseView();
         }
     });

@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 110%;
+    font-size: 100%;
 }
 
 h3 {
@@ -181,6 +181,14 @@ section.section-wrapper.visible-background {
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-duration: 0.1s;
 
+    -moz-animation-name: spin;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-duration: 0.1s;
+
+    -o-animation-name: spin;
+    -o-animation-fill-mode: forwards;
+    -o-animation-duration: 0.1s;
+
     animation-name: spin;
     animation-fill-mode: forwards;
     animation-duration: 0.1s;
@@ -189,6 +197,18 @@ section.section-wrapper.visible-background {
 @-webkit-keyframes spin {
     100% {
         -webkit-transform: rotate(90deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(90deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        -o-transform: rotate(90deg);
     }
 }
 
@@ -212,7 +232,7 @@ section h2 {
 }
 
 section h3 {
-    font-size: 110%;
+    font-size: 100%;
 }
 
 .section-wrapper h1 {
@@ -285,10 +305,6 @@ ol.author-guideline-main-list {
     padding-left: 0;
 }
 
-ol.author-guideline-main-list h3 {
-    padding-top: 2px;
-}
-
 ol.author-guideline-main-list > li {
     counter-increment: root;
     margin-bottom: 30px;
@@ -301,7 +317,11 @@ ol.author-guideline-main-list > li ol {
 
 ol.author-guideline-main-list > li ol > li ol {
     padding-left: 0;
-    margin-left: 45px;
+    margin-left: 50px;
+}
+
+ol.author-guideline-main-list > li ol > li > ol > li {
+    padding-left: 5px;
 }
 
 ol.author-guideline-main-list > li ol > li p {
@@ -319,10 +339,11 @@ ol.author-guideline-main-list .card-body > ol > li {
     margin-bottom: 30px;
 }
 
-ol.author-guideline-main-list .card-body > ol > li::before {
+ol.author-guideline-main-list > li .card-body > ol > li::before {
     content: counter(root) "." counter(subsection) ". ";
     float: left;
     margin-right: 5px;
+    padding: 0;
 }
 
 ol.author-guideline-main-list .card-body > ol > li > ol > li {
@@ -335,7 +356,7 @@ ol.author-guideline-main-list .card-body > ol > li:last-child {
 
 .board-group {
     padding: 10px 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .board-group:last-of-type {
@@ -454,10 +475,10 @@ footer p {
     }
 
     header h1 {
-        font-size: 140%;
+        font-size: 120%;
     }
 
-    header h3 {
+    header  {
         font-size: 120%
     }
 
@@ -539,12 +560,16 @@ footer p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    p, li, td, address {
+    p, td, address {
         font-size: 100%;
     }
 
     a {
         font-size: 100%;
+    }
+
+    li {
+        font-size: 105%;
     }
 
     hr {
@@ -576,7 +601,7 @@ footer p {
     }
 
     #subheading h1 {
-        font-size: 180%;
+        font-size: 140%;
     }
 
     ul.navbar-nav > li {
@@ -730,7 +755,7 @@ footer p {
     }
 
     #subheading h1 {
-        font-size: 200%;
+        font-size: 160%;
     }
 
     a.nav-link {
@@ -761,10 +786,6 @@ footer p {
 
     ol.author-guideline-main-list li {
         font-size: 105%;
-    }
-
-    ol.author-guideline-main-list h3 {
-        padding-top: 1px;
     }
 
     footer ul li {
