@@ -1,5 +1,5 @@
 <meta name="description" content="The Philippine e-Journal for Applied Research and Development (PeJARD) is a peer-reviewed, online, and open access journal that comes out in annual volumes.  It caters to applied research outputs that have bearings on real-world problems affecting communities, sectors, and institutions across the country">
 
-<meta name="keywords" content="pejard,slu,research,journal,nlrj,articles,applied,philippines,education,ccby,archives,manuscript,cicm,e-journal">
+<meta name="keywords" content="pejard,slu,research,journal,nlrj,articles,applied,volume,philippines,education,ccby,archives,manuscript,cicm,e-journal">
 
 <meta name="author" content="Super User">
