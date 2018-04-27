@@ -11,7 +11,10 @@ body {
     background-size: cover;
     background-attachment: fixed, fixed;
     min-height: 100vh;
+}
 
+button.navbar-toggler {
+    display: none;
 }
 
 .bg-primary-accent {
@@ -459,10 +462,6 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #container {
-        padding: 0 40px;
-    }
-
     /* Header */
     #brand {
         width: 150px;
@@ -482,7 +481,7 @@ footer p {
 
     /* Navigation */
     .nav-item {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     /* Body */
@@ -587,6 +586,11 @@ footer p {
 
     .icon {
         display: none;
+    }
+
+    /* Navigation */
+    .nav-item {
+        font-size: 100%;
     }
 
     /* Header */
